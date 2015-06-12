@@ -1,0 +1,25 @@
+img{
+	border:solid 1px #555;
+	border-left:dashed 1px #777;
+	border-right:dashed 1px #777;
+}
+.error_message{
+	background: url("../img/error.png") no-repeat 0px 0px;
+	width:250px;
+	height:227px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.error_message span{
+	font-size:2em;
+	font-weight:bold;
+	position:relative;
+	top:150px;
+	left:58px;
+}
+.error_message p{
+	font-size:1.2em;
+	position:relative;
+	top:170px;
+	text-align:center;
+}

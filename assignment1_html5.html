@@ -1,0 +1,184 @@
+<!--#include file="header.html" -->
+
+
+
+
+	<main id="html5_image">
+		
+
+		<div class="gap">			
+		</div>
+
+		<section class="container no-padding index ">
+			
+			<article class="white-info-container">
+				<header class="solid-bar text-center">
+					<h2>Geolocation API</h2>	
+				</header>
+				<div class="top-btm-padding width-container">
+					<div class="info float-right margin-v">
+						<p id="userdemo">Get your Location details</p>
+						<button onclick="getuserLocation()">Get location</button>						
+					</div> <!-- info -->
+					<figure class="my-image float-left">
+						<div id="mapholder"></div>
+						<div id="leftImage"></div>
+						<div id="firefox">
+							<div class="firefox-img">
+								
+							</div>
+
+						</div>
+					</figure>
+				</div> <!-- top-btm-padding width-container -->
+			</article> <!-- white-info-container -->
+		</section> <!-- container no-padding -->
+
+		<section class="container no-padding ">
+			<article class="white-info-container">
+				<header class="solid-bar text-center">
+					<h2>Canvas Mouse Coordinates</h2>	
+				</header>
+				<div class="top-btm-padding width-container">
+					<div class="info float-right margin-v">
+						<p>Drag your mouse along the left side of screen.</p>
+						<p>This feature tracks your mouse movements</p>
+					</div> <!-- info -->
+					<figure class="my-image float-left margin-v">
+					<h3>Place your mouse cursor under here</h3>
+						<canvas id="myCanvas" width="578" height="200"></canvas>
+
+					</figure>
+				</div> <!-- top-btm-padding width-container -->
+			</article> <!-- white-info-container -->
+		</section> <!-- container no-padding -->
+
+		<section class="container no-padding ">
+			<article class="white-info-container">
+				<header class="solid-bar text-center">
+					<h2>Editable Fields</h2>	
+				</header>
+				<div class="top-btm-padding width-container">
+					<div class="info float-right margin-v">
+							<p>On the left side of the screen, the LI is an editable field.</p>
+						
+					</div> <!-- info -->
+					<div class="float-left margin-v">
+						<ul class="dots" id="edit" contenteditable="true">
+							<li>Click here and enter more information</li>
+						</ul>
+
+					</div>
+				</div> <!-- top-btm-padding width-container -->
+			</article> <!-- white-info-container -->
+		</section> <!-- container no-padding -->
+
+		<section class="container no-padding ">
+			<article class="white-info-container">
+				<header class="solid-bar text-center">
+					<h2>Forms and Form expressions</h2>	
+				</header>
+				<div class="top-btm-padding width-container">
+					<div class="info float-right margin-v">
+						<p>The following Input form, requires only upper and lowercase letters and between 4-10 characters.</p>
+						<p>The "Go" button display differently on Firefox compared to Chrome</p>
+
+						<div class="next-form">
+						<p>The next form is an example of utilizing the progress bar, when filling out a form.</p>
+						<p>The bar is set to 0 when empty and if all fields are filled the bar is at 100%</p>
+						</div>
+
+					</div> <!-- info -->
+					<div class="float-left margin-v">
+					<form action="#" method="post">
+					    <label for="username">Create a Username: </label>
+					    <input type="text"
+					       name="username"
+					       id="username"
+					       placeholder="Between 4-10 characters"
+					       pattern="[A-Za-z]{4,10}"
+					       autofocus
+					       required>
+					    <button type="submit">Go </button>
+					</form>
+
+					<div class="row">
+					<div class="next-form">
+						<form id="payment-form" action="#">
+	  
+						   <label for="name">Full Name</label><br>
+						   <input required id="name" name="name">
+
+						   <div class="field">
+						      <label for="card_name">Name on Card</label>
+						      <br>
+						      <input id="card_name" required="required" type="text">
+						    </div>
+
+						    <label for="email">Email Address</label>
+						      <br>
+						      <input id="email" required="required" type="email">
+						      <br>
+						      <button type="submit">Submit </button>
+
+
+						   <!-- etc -->
+
+						</form>
+						<progress max="100" value="0" id="progress"></progress>
+
+
+
+						
+						
+					</div>
+						
+					</div>
+
+
+
+					</div>
+				</div> <!-- top-btm-padding width-container -->
+			</article> <!-- white-info-container -->
+		</section> <!-- container no-padding -->
+
+		<section class="container no-padding ">
+			<article class="white-info-container">
+				<header class="solid-bar text-center">
+					<h2>Video</h2>	
+				</header>
+				<div class="top-btm-padding width-container">
+					<div class="info video-section float-right margin-v">
+						<p>HTML5 has the option to autoplay videos and to preload videos to save the user some time.</p>
+						<p>I've decided not to autoplay the video but to preload it for a better user experience. With the preload enabled, a user can view the video without waiting for the video to load. </p>
+
+						<p>In the specs, its recommended to add the following attribute for mp4 codecs <code>type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2'"</code> but seems like the attribute isn't recognized by Chrome. Works great on Firefox though.</p>
+					</div> <!-- info -->
+					<div class="float-left margin-v">
+						<Video preload="preload" >
+						    <source src="video/Jurassic World - Official Global Trailer HD.mp4"  /> 
+						</video>
+						<p>To enable the control add, controls="controls"</p>
+						<Video preload="preload"  controls="controls">
+						    <source src="video/Jurassic World - Official Global Trailer HD.mp4"  /> 
+						</video>
+						<p>Controls enabled by adding controls="controls"</p>
+
+						<Video preload="preload"  controls="controls">
+						    <source src="video/Jurassic World - Official Global Trailer HD.mp4"  type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2'"  /> 
+						</video>
+						<p>Due to adding a video/mp4 attribute, the video is not viewable in Chrome.</p>
+						<code>type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2'"</code>
+
+					</div>
+				</div> <!-- top-btm-padding width-container -->
+			</article> <!-- white-info-container -->
+		</section> <!-- container no-padding -->
+
+
+	</main>
+<script src="js/geolocation.js"></script>
+<script src="js/mouse.js"></script>
+<script src="js/progress.js"></script>
+
+<!--#include file="footer.html" -->

@@ -1,0 +1,49 @@
+nav{
+	display: none;
+}
+
+a[href^=".html"]:after { 
+	content: "URL:" attr(href);
+	color:red;
+	font-size: 2em;
+}
+
+a[target="_blank"]:after { 
+	content: "URL:" attr(href);
+	color:red;
+	font-size: 2em;
+}
+
+.featured-image{
+	display: none;
+}
+
+#ballWrapper{
+	display: none;
+}
+
+#ball{
+	display: none;
+
+}
+
+#ballShadow{
+	display: none;
+
+}
+
+.date{
+	box-shadow: 0;
+}
+
+footer{
+	display: none;
+}
+
+/*h2{ 
+	page-break-before: always; 
+} 
+
+.category{
+	 page-break-after: avoid; 
+	}*/
